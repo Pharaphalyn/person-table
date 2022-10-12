@@ -19,7 +19,7 @@ App.controller('personController', function($scope, $http) {
         }
 
         const person = {
-            id: $scope.persons[$scope.persons.length - 1] + 1,
+            id: $scope.persons.length !== 0 ? $scope.persons[$scope.persons.length - 1] + 1 : 1,
             firstName: $scope.firstName,
             middleName: $scope.middleName,
             lastName: $scope.lastName,
