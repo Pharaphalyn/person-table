@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "cardNumber": "481/YY-П",
+        "lastName": "Петров",
+        "firstName": "Пётр",
+        "middleName": "Петрович",
+        "city": "Москва",
+        "birthDate": "15.03.1990"
+    },
+    {
+        "id": 2,
+        "cardNumber": "213/YY-П",
+        "lastName": "Иванов",
+        "firstName": "Иван",
+        "middleName": "Иванович",
+        "city": "Симферопль",
+        "birthDate": "16.05.1991"
+    },
+    {
+        "id": 3,
+        "cardNumber": "212/YY-П",
+        "lastName": "Артуров",
+        "firstName": "Артур",
+        "middleName": "Артурович",
+        "city": "Белгород",
+        "birthDate": "12.01.1998"
+    },
+    {
+        "id": 4,
+        "cardNumber": "211/YY-П",
+        "lastName": "Грек",
+        "firstName": "Алёша",
+        "middleName": "Попович",
+        "city": "Ярославль",
+        "birthDate": "12.01.1898"
+    } 
+]

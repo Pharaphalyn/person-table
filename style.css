@@ -1,0 +1,63 @@
+.persons-table {
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    border-collapse: collapse;
+}
+
+.person-card {
+    /* border-top: 1px solid black; */
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+.no-border-bottom {
+    border-bottom: none;
+}
+
+.person-card:nth-child(3n) {
+    border-right: none;
+}
+
+.person-data:hover {
+    font-weight: bold;
+}
+
+.buttons {
+    width: 100%;
+    text-align: right;
+}
+
+.person-add, .person-delete {
+    cursor: pointer;
+}
+
+.person-delete:hover {
+    color: red;
+}
+
+.person-add:hover {
+    color: green;
+}
+
+.new-person {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.new-person input {
+    margin-bottom: 4px;
+}
+
+.name-line {
+    width: 100%;
+    text-align: center;
+}

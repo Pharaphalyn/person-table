@@ -1,1 +1,1 @@
-# person-table
+Run index.html.

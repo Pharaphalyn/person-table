@@ -1,0 +1,39 @@
+<html ng-app="App">
+   <head>
+        <title>АРТ-БАНК Test Assignment</title>
+        <link rel="stylesheet" href="style.css">
+   </head>
+   
+   <body ng-controller="personController">
+        <h1>Persons App</h1>
+        <div class="persons-table">
+            <div class="person-card" ng-class="{'no-border-bottom': (persons.length - (persons.length % 3 === 0 ? 3 : persons.length % 3)) < index + 1}" ng-repeat="(index, person) in persons">
+                <div class="name-line person-data">
+                    {{ person.lastName }}
+                    {{ person.firstName }}
+                    {{ person.middleName }}
+                </div>
+                <div class="person-data">Номер карты: {{ person.cardNumber }}</div>
+                <div class="person-data">Дата рождения: {{ person.birthDate }}</div>
+                <div class="buttons">
+                    <a class="person-delete" ng-click="deletePerson(person)">Удалить</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="new-person">
+            <input ng-model="firstName" placeholder="Имя">
+            <input ng-model="middleName" placeholder="Отчество">
+            <input ng-model="lastName" placeholder="Фамилия">
+            <input ng-model="cardNumber" placeholder="Номер карты">
+            <input ng-model="city" placeholder="Город">
+            <input ng-model="birthDate" placeholder="Дата рождения">
+            <div class="buttons">
+                <a class="person-add" ng-click="addPerson()">Добавить</a>
+            </div>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <script src="app.js"></script>
+   </body>
+</html>
